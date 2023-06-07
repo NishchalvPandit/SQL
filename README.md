@@ -1,8 +1,5 @@
 # Databases and SQL
 
-This is my whole summary of learning SQL.
-
-
 A database is an organized collection of data stored and accessed electronically. It is designed to efficiently manage, store, retrieve, and update large amounts of structured information.
 
 Databases are used in various applications and industries to store and manipulate data in a structured manner, allowing for easy access, retrieval, and analysis of information.
