@@ -11,6 +11,9 @@ In a relational database, data is stored in tables, which are structured as two-
 
 ## SQL
 SQL (Structured Query Language) is a standardized programming language used for managing and manipulating relational databases. It provides a set of commands and syntax for querying, updating, and managing the data stored in a relational database.
+## DML
+DML (Data Manipulation Language): It is used to manipulate the data stored in the database.
+
 | Command  | Description                                           | Syntax                                                                                 | Example                                                                                  |
 |----------|-------------------------------------------------------|----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
 | SELECT   | Retrieve data from a table                            | `SELECT column1, column2, ... FROM table_name;`                                         | `SELECT * FROM employees;`                                                              |
@@ -20,4 +23,16 @@ SQL (Structured Query Language) is a standardized programming language used for 
 | LIMIT    | Limit the number of rows returned                      | `SELECT column1, column2, ... FROM table_name LIMIT number_of_rows;`                    | `SELECT * FROM employees LIMIT 10;`                                                      |
 | INSERT   | Insert new data into a table                           | `INSERT INTO table_name (column1, column2, ...) VALUES (value1, value2, ...);`          | `INSERT INTO employees (name, age, salary) VALUES ('John', 30, 60000);`                   |
 | UPDATE   | Modify existing data in a table                        | `UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition;`        | `UPDATE employees SET salary = 65000 WHERE employee_id = 101;`                            |
-| DELETE   | Remove data from a table                               | `DELETE FROM table_name WHERE condition;`                                                | `DELETE FROM employees WHERE employee_id = 101;`                                         |
+| DELETE   | Remove data from a table                               | `DELETE FROM table_name WHERE condition;`                                                | `DELETE FROM employees WHERE employee_id = 101;`  \
+
+
+## DDL
+DDL (Data Definition Language): It is used to define and manage the structure of database objects.
+
+| Operation   | Syntax                                     | Example                                 | Use                                      |
+|-------------|--------------------------------------------|-----------------------------------------|------------------------------------------|
+| Create      | `CREATE TABLE table_name ( ... );`          | `CREATE TABLE employees ( ... );`       | Create a new table with specified columns |
+| Alter       | `ALTER TABLE table_name ADD COLUMN ... ;`   | `ALTER TABLE employees ADD COLUMN ... ;`| Add a new column to an existing table     |
+| Truncate    | `TRUNCATE TABLE table_name;`                | `TRUNCATE TABLE employees;`             | Remove all rows from a table              |
+
+
